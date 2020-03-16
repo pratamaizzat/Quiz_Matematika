@@ -8,9 +8,9 @@
         <b-list-group-item
           @click.prevent="selectAnswer(index)"
           :class="answerClass(index)"
-          v-for="(answer, index) in answers"
+          v-for="(shuffleanswer, index) in shuffledAnswers"
           :key="index"
-          >{{ answer }}</b-list-group-item
+          >{{ shuffleanswer }}</b-list-group-item
         >
       </b-list-group>
       <b-button
